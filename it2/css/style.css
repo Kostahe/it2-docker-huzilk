@@ -1,55 +1,28 @@
 body {
-    background-color: pink;
-    font-size: xx-large;
+    background: antiquewhite;
+}
+
+div span {
+    color: brown;
+}
+
+div div span {
+    color: red;
 }
 
 h1 {
-    color: greenyellow;
-
+    font-size: 50px;
 }
 
 p {
-    color: red;
+    color: darkkhaki;
 }
 
-h2 {
-    color: blue;
-}
-h3 {
-    color: #009900;
-}
-h4 {
-    color: #885500;
-}
-h5 {
-    color: orange;
-}
-h6 {
-    color: aqua;
-}
-a {
-    color: white;
-}
-a:hover {
-    color: red;
-}
-a:visited {
-
-    color: purple;
+.odkaz {
+    text-decoration: underline wavy blue 5px;
+    font-size: 30px;
 }
 
-table {
-
-}
-
-tr {
-
-}
-
-td {
-
-}
-
-.bunka-cena{
-
+#zelenej paragraph {
+    color: green;
 }
