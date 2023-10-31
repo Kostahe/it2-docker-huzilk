@@ -44,5 +44,12 @@
     var_dump($cislo > $cislo2);
     var_dump($cislo < $cislo2);
 
+    var_dump($cislo && $cislo2);
+    var_dump($cislo && $cislo2);
+
+    var_dump(!$cislo && !$cislo2);
+    var_dump(!$cislo || $cislo2);
+
+
 
 
