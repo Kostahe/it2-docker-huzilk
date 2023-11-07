@@ -45,13 +45,19 @@ switch ($jmenoPrijmeni1) {
 }
 
 $produkty = array("pocitace", "tiskarny", "konzole", "mobily", "tablety");
-$produkty["tiskarny"]["laserova"] = "HP";
-$produkty["tiskarny"]["laserova"] = "Canon";
-$produkty["pocitace"]["notebooky"] = "Lenovo";
-$produkty["pocitace"]["notebooky"] = "Acer";
-$produkty["mobily"]["Android"] = "Samsung";
-$produkty["mobily"]["IOS"] = "Apple";
-$produkty["mobily"]["Android"] = "Xiaomi";
+$produkty["tiskarny"]["laserova"][0] = "HP";
+$produkty["tiskarny"]["laserova"][1] = "Canon";
+$produkty["pocitace"]["notebooky"][0] = "Lenovo";
+$produkty["pocitace"]["notebooky"][1] = "Acer";
+$produkty["pocitace"]["notebooky"] = "HP";
+$produkty["mobily"]["Android"][0] = "Samsung";
+$produkty["mobily"]["IOS"][0] = "Apple";
+$produkty["mobily"]["Android"][1] = "Xiaomi";
+$produkty["mobily"]["Android"][2] = "Huawei";
+$produkty["mobily"]["Android"][3] = "Sony";
+$produkty["mobily"]["Android"][4] = "Google pixel";
+$produkty["mobily"]["Android"][5] = "Motorola";
+
 
 var_dump($produkty);
 
