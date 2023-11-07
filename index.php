@@ -44,20 +44,47 @@ switch ($jmenoPrijmeni1) {
         break;
 }
 
-$produkty = array("pocitace", "tiskarny", "konzole", "mobily", "tablety");
+$produkty = array();
 $produkty["tiskarny"]["laserova"][0] = "HP";
 $produkty["tiskarny"]["laserova"][1] = "Canon";
 $produkty["pocitace"]["notebooky"][0] = "Lenovo";
 $produkty["pocitace"]["notebooky"][1] = "Acer";
-$produkty["pocitace"]["notebooky"] = "HP";
+$produkty["pocitace"]["notebooky"][1] = "HP";
+$produkty["pocitace"]["notebooky"][2] = "Mac";
+$produkty["pocitace"]["notebooky"][3] = "MSI";
 $produkty["mobily"]["Android"][0] = "Samsung";
-$produkty["mobily"]["IOS"][0] = "Apple";
 $produkty["mobily"]["Android"][1] = "Xiaomi";
-$produkty["mobily"]["Android"][2] = "Huawei";
-$produkty["mobily"]["Android"][3] = "Sony";
-$produkty["mobily"]["Android"][4] = "Google pixel";
-$produkty["mobily"]["Android"][5] = "Motorola";
+$produkty["mobily"]["Android"][2] = "Google pixel";
+$produkty["mobily"]["Android"][3] = "Asus";
+$produkty["mobily"]["Ios"][0] = "Iphone";
+$produkty["konzole"]["Sony"][0] = "Ps4";
+$produkty["konzole"]["Sony"][1] = "Ps5";
+$produkty["konzole"]["Microsoft"][0] = "Xbox one";
+$produkty["konzole"]["Microsoft"][1] = "Xbox series x";
 
 
-var_dump($produkty);
+foreach ($produkty as $key => $value) {
+    foreach ($value as $key1 => $value1) {
+        foreach ($value1 as $key2 => $value2) {
+            var_dump($value2);
+        }
+    }
+}
+
+$rows = 10;
+$columns = 10;
+
+echo "<table style='border: solid black 2px'>";
+for ($i = 1; $i <= $rows; $i++) {
+    echo "<tr style='border: solid black 2px'>";
+        for ($x = 1; $x <= $columns; $x++) {
+            echo "<td style='border: solid black 2px'>".$i.".".$x."</td>";
+        }
+    echo "</tr>";
+}
+
+echo "</table>";
+
+
+
 
