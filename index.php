@@ -53,5 +53,5 @@ $produkty["mobily"]["Android"] = "Samsung";
 $produkty["mobily"]["IOS"] = "Apple";
 $produkty["mobily"]["Android"] = "Xiaomi";
 
-echo $produkty["mobily"]["Android"];
+var_dump($produkty);
 
