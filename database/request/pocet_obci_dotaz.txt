@@ -1,2 +1,2 @@
 SELECT count(*) as pocet
-FROM obec_huzil
+FROM obec_huzil;
