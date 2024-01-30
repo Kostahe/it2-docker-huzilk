@@ -4,3 +4,8 @@ FROM obec_huzil;
 SELECT COUNT(*) AS pocet_obci
 FROM obec_huzil
 GROUP BY okres_id_huzil;
+
+SELECT COUNT(*) as pocet_obci
+FROM obec_huzil
+GROUP BY okres_id_huzil
+ORDER BY pocet_obci DESC;
