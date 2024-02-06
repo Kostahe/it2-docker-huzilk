@@ -10,7 +10,8 @@ FROM obec_huzil
 GROUP BY okres_id_huzil
 ORDER BY pocet_obci DESC;
 
-SELECT k.nazev_huzil, COUNT(o.id_huzil) FROM kraj_huzil as k
+SELECT k.nazev_huzil as nazev, COUNT(o.id_huzil) as pocet_obci
+FROM kraj_huzil as k
 LEFT JOIN obec_huzil as o
 ON o.kraj_id_huzil = k.id_huzil
 GROUP BY k.nazev_huzil;
