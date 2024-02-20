@@ -16,8 +16,15 @@ LEFT JOIN obec_huzil as o
 ON o.kraj_id_huzil = k.id_huzil
 GROUP BY k.nazev_huzil;
 
-SELECT o.nazev_huzil, COUNT(psc.id_huzil)
+SELECT o.nazev_huzil, COUNT(DISTINCT psc.id_huzil) as pocet_psc
 FROM kraj_huzil as k
 LEFT JOIN obec_huzil as o ON o.kraj_id_huzil = k.id_huzil
 LEFT JOIN psc_huzil as psc ON psc.kraj_id_huzil = k.id_huzil
-GROUP BY o.kraj_id_huzil
+GROUP BY o.id_huzil
+
+SELECT k.nazev_huzil as nazev, COUNT(DISTINCT ob.id_huzil) as pocet_obci, COUNT(DISTINCT o.id_huzil) as pocet_okresu
+FROM kraj_huzil as k
+LEFT JOIN okres_huzil as o ON o.kraj_id_huzil = k.id_huzil
+LEFT JOIN obec_huzil as ob ON ob.okres_id_huzil = o.id_huzil
+WHERE ob.okres_id_huzil = o.id_huzil
+GROUP BY k.id_huzil
