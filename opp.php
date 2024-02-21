@@ -15,3 +15,11 @@ $a = new A;
 
 echo $a::$e;
 echo $a->a;
+
+abstract class B {
+    public static function formatNumber(): void
+    {
+        echo "Format number";
+    }
+}
+
