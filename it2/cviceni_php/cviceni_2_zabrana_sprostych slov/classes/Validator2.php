@@ -1,5 +1,4 @@
 <?php
-
 class Validator2
 {
     private array $inappropriateWords;
@@ -15,13 +14,12 @@ class Validator2
     public function isValid(string $sentence)
     {
         $arrayOfSentencesWords = explode(" ", $sentence);
-        foreach (this->$inappropriateWords as $inappropriateValue) {
+        foreach ($this->inappropriateWords as $inappropriateValue) {
             foreach ($arrayOfSentencesWords as $sentenceValue) {
                 if ($inappropriateValue == $sentenceValue) {
                     return false;
                 }
             }
-
         }
         return true;
     }
