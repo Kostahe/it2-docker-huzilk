@@ -1,6 +1,4 @@
 <?php
-namespace cviceni_2;
-
 class Validator
 {
     static function isValid(string $sentence, array $inappropriateWords): bool {
