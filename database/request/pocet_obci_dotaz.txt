@@ -28,3 +28,10 @@ LEFT JOIN okres_huzil as o ON o.kraj_id_huzil = k.id_huzil
 LEFT JOIN obec_huzil as ob ON ob.okres_id_huzil = o.id_huzil
 LEFT JOIN psc_huzil as psc ON o.id_huzil = psc.okres_id_huzil
 GROUP BY k.id_huzil
+
+
+#Subselect
+SELECT o.nazev_huzil AS nazev_obce,
+(SELECT k.nazev_huzil FROM kraj_huzil AS k WHERE o.kraj_id_huzil = k.id_huzil) AS nazev_kraje
+FROM obec_huzil AS o
+LIMIT 10;

@@ -1,8 +1,17 @@
 <?php
 
+/**
+ *
+ */
 final class Utils
 {
+    /**
+     * @var int
+     */
     private static int $min = 0;
+    /**
+     * @var int
+     */
     private static int $max = 9;
 
     /**
