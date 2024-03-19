@@ -1,10 +1,13 @@
 <?php
 
+
 /**
- *
+ * @author Konstantyn Huzil
+ * Singleton klasa, ktera slouzi k generovani pinu
  */
 final class Utils
 {
+
     /**
      * @var int
      */
@@ -16,6 +19,8 @@ final class Utils
 
     /**
      * @return string
+     * @author Konstantyn Huzil
+     * funkce ktera generuje 4 mistny pin
      */
     public static function genPin(): string
     {
