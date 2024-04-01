@@ -1,0 +1,1 @@
+Vytvor databazi skola a pak import
